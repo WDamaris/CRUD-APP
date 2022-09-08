@@ -5,12 +5,24 @@
       "value": "Doing laundry"
     },
     {
-      "value": "Babysitting",
+      "value": "Gymnastics",
       "id": 2
     },
     {
-      "value": "Babysitting",
+      "value": "Yoga",
       "id": 3
+    },
+    {
+      "value": "Run errands",
+      "id": 4
+    },
+    {
+      "value": "Walk the dog",
+      "id": 5
+    },
+    {
+      "value": "Morning run" 
     }
+   
   ]
 }
