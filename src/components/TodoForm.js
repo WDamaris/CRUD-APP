@@ -41,11 +41,11 @@ if (!input) {
     return (
     <div>
         <form className="todo-form" onSubmit={handleSubmit}>
-               <h1> What are planning today?</h1>
+               <h1> What are you planning today?</h1>
             <input
             className="todo-input"
             type="text"
-            placeholder="Add a todo..."
+            placeholder="Enter..."
             value={input}
             required
             onChange={handleChange}  
