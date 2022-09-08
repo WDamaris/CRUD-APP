@@ -1,6 +1,6 @@
 ## By Damaris Wanjiku
 ### Description
-In this project I build application that can be used to add plans of your day,what you intend to do and at the end of the day mark what you were able to accomplish.
+In this project I am building an application that can be used to add plans of your day,what you intend to do and at the end of the day mark what you were able to accomplish.
 ### Live link 
 https://631a3b016a4fdc0379fd3189--stirring-gelato-a1aa7c.netlify.app/
 ### Built with
@@ -8,7 +8,8 @@ https://631a3b016a4fdc0379fd3189--stirring-gelato-a1aa7c.netlify.app/
 #### CSS- To add styling to the page.
 #### React.js- To manage our states.
 #### React.js- To manage our states.
-#### UseState Hooks-To allow changes reflect on the DOM as a user interacts with the application.
+#### UseState Hook-To allow changes reflect on the DOM as a user interacts with the application.
+#### UseState Hook-For CRUD functionality.
 MIT License
 
 Copyright (c) 2022 WDamaris
