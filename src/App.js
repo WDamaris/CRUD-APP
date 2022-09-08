@@ -1,5 +1,5 @@
 
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 // import './App.css';
 import TodoForm from './components/TodoForm';
 // import Todolist from './components/Todolist';
@@ -13,23 +13,23 @@ function App() {
   // Crud functions 
   // GET REQUEST
   useEffect(()=> {
-    fetch(" http://localhost:4000/todos")
+    fetch(" http://localhost:4000/todos/")
     .then((r) => r.json())
-    .then(todos =>setTodos(todos.id))
+    .then((data) =>setTodos(data))
     .catch(error => console.error(error))
   },[])
 
-  // POST REQUEST
-useEffect(()=> {
-  fetch(" http://localhost:4000/todos", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json"
-    },
-    body:JSON.stringify({value: "Babysitting"}),
-  })
-  .then(r => r.json())
-}, [])
+//   // POST REQUEST
+// useEffect(()=> {
+//   fetch(" http://localhost:4000/todos", {
+//     method: "POST",
+//     headers: {
+//       "content-type": "application/json"
+//     },
+//     body:JSON.stringify({value: "Babysitting"}),
+//   })
+//   .then(r => r.json())
+// }, [])
 
   return (
     <div className="App-todo">
