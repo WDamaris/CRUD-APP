@@ -3,7 +3,7 @@
 ### Description
 In this project I am building an application that can be used to add plans of your day,what you intend to do and at the end of the day mark what you were able to accomplish.
 ### Live link 
-https://631a3b016a4fdc0379fd3189--stirring-gelato-a1aa7c.netlify.app/
+https://631a547cd66a3a0d2c8e03d6--nimble-snickerdoodle-76265f.netlify.app/
 ### Built with
 #### HTML- To develop the structure and content of the webpage.
 #### CSS- To add styling to the page.
