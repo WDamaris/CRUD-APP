@@ -12,24 +12,24 @@ function App() {
 
   // Crud functions 
   // GET REQUEST
-  useEffect(()=> {
-    fetch(" http://localhost:4000/todos/")
-    .then((r) => r.json())
-    .then((data) =>setTodos(data))
-    .catch(error => console.error(error))
-  },[])
+  // useEffect(()=> {
+  //   fetch(" http://localhost:4000/todos")
+  //   .then((r) => r.json())
+  //   .then((data) =>setTodos(data))
+  //   .catch(error => console.error(error))
+  // },[])
 
 //   // POST REQUEST
-// useEffect(()=> {
-//   fetch(" http://localhost:4000/todos", {
-//     method: "POST",
-//     headers: {
-//       "content-type": "application/json"
-//     },
-//     body:JSON.stringify({value: "Babysitting"}),
-//   })
-//   .then(r => r.json())
-// }, [])
+useEffect(()=> {
+  fetch(" http://localhost:4000/todos", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body:JSON.stringify({value: "Babysitting"}),
+  })
+  .then(r => r.json())
+}, [])
 
   return (
     <div className="App-todo">
