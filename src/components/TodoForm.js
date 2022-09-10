@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Delete } from '@mui/icons-material'
 function TodoForm({input,setInput,todos,setTodos}){
    
@@ -8,12 +8,12 @@ function TodoForm({input,setInput,todos,setTodos}){
     const handleSubmit=(e) => {
      e.preventDefault();
     }
-
-    function addTodo (){
-if (!input) {
-    alert("Enter Task");
-    return;
-}
+    
+        function addTodo (){          
+           if (!input) {
+           alert("Enter Task");
+           return;
+       }
             const todo= {
             id: Math.floor(Math.random() *1000),
             value: input
@@ -21,7 +21,10 @@ if (!input) {
             setTodos(currentTodo => [...currentTodo,todo])
             setInput("")
             console.log(todos)
-        }
+
+           
+ 
+  }
 
         function  deleteTodo(id){
             const newArray=todos.filter(todo=> todo.id !==id)

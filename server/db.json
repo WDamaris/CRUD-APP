@@ -1,28 +1,17 @@
 {
   "todos": [
     {
-      "id": 1,
-      "value": "Doing laundry"
+      "value": "Morning run",
+      "id": 1
     },
     {
-      "value": "Gymnastics",
+      "value": "Google meet",
       "id": 2
     },
     {
-      "value": "Yoga",
+      "value": "Hang out",
       "id": 3
-    },
-    {
-      "value": "Run errands",
-      "id": 4
-    },
-    {
-      "value": "Walk the dog",
-      "id": 5
-    },
-    {
-      "value": "Morning run" 
     }
-   
+ 
   ]
 }

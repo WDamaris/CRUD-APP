@@ -11,25 +11,28 @@ function App() {
   const [todos, setTodos]=useState([])
 
   // Crud functions 
-  // GET REQUEST
-  // useEffect(()=> {
-  //   fetch(" http://localhost:4000/todos")
-  //   .then((r) => r.json())
-  //   .then((data) =>setTodos(data))
-  //   .catch(error => console.error(error))
-  // },[])
+//GET REQUEST
+   useEffect(()=> {
+    fetch(" http://localhost:4000/todos/")
+    .then((r) => r.json())
+    .then((data) =>setTodos(data))
+    .catch(error => console.error(error))
+  },[])
+  
+  // POST REQUEST
+// useEffect (()=>{
+//   fetch(" http://localhost:4000/todos", {
+//     method: "POST",
+//     headers: {
+//       "content-type": "application/json"
+//     },
+//     body:JSON.stringify({value: todos.value})
+// })
+//   .then(r => r.json())
+//   .then(data =>console.log(data))
+//  // eslint-disable-next-line react-hooks/exhaustive-deps
+// }, [])
 
-//   // POST REQUEST
-useEffect(()=> {
-  fetch(" http://localhost:4000/todos", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json"
-    },
-    body:JSON.stringify({value: "Babysitting"}),
-  })
-  .then(r => r.json())
-}, [])
 
   return (
     <div className="App-todo">
