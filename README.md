@@ -11,6 +11,7 @@ https://631a547cd66a3a0d2c8e03d6--nimble-snickerdoodle-76265f.netlify.app/
 #### React.js- To manage our states.
 #### UseState Hook-To allow changes reflect on the DOM as a user interacts with the application.
 #### UseState Hook-For CRUD functionality.
+#### JSON Server- To allow back-end requests like POST and GET
 MIT License
 
 Copyright (c) 2022 WDamaris
