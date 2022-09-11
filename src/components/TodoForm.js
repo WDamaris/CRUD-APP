@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React from "react"
 import { Delete } from '@mui/icons-material'
 function TodoForm({input,setInput,todos,setTodos}){
    
@@ -21,9 +21,6 @@ function TodoForm({input,setInput,todos,setTodos}){
             setTodos(currentTodo => [...currentTodo,todo])
             setInput("")
             console.log(todos)
-
-           
- 
   }
 
         function  deleteTodo(id){
@@ -38,9 +35,7 @@ function TodoForm({input,setInput,todos,setTodos}){
             return todo
              })
             setTodos(updatedTodos)
-
          }
-    
     return (
     <div>
         <form className="todo-form" onSubmit={handleSubmit}>

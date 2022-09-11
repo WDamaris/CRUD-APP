@@ -20,24 +20,23 @@ function App() {
   },[])
   
   // POST REQUEST
-// useEffect (()=>{
-//   fetch(" http://localhost:4000/todos", {
-//     method: "POST",
-//     headers: {
-//       "content-type": "application/json"
-//     },
-//     body:JSON.stringify({value: todos.value})
-// })
-//   .then(r => r.json())
-//   .then(data =>console.log(data))
-//  // eslint-disable-next-line react-hooks/exhaustive-deps
-// }, [])
+useEffect (()=>{
+  fetch(" http://localhost:4000/todos", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body:JSON.stringify({value: input})
+})
+  .then(r => r.json())
+  .then(data =>console.log(data))
+ // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [])
 
 
   return (
     <div className="App-todo">
-   
-      <TodoForm 
+     <TodoForm 
       input={input}
       setInput={setInput}
       todos={todos}
